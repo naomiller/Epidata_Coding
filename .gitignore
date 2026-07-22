@@ -1,0 +1,23 @@
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+# Ignore all data files
+*.xpt
+*.csv
+Data/
+
+# --- Additions below ---
+
+# 1. Mac system junk (CRUCIAL for Mac users)
+.DS_Store
+
+# 2. Quarto / R Markdown temporary folders
+*_cache/
+*_files/
+
+# 3. SAS / SPSS / Stata data files (common in NHANES)
+*.sas7bdat
+*.dta
+*.sav
