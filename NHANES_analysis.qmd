@@ -1,0 +1,46 @@
+---
+title: "nhanes_analysis"
+format: html
+editor: visual
+---
+
+# Load Libraries
+
+```{r}
+#load libraries
+library(haven)
+library(here)
+```
+
+# Import Data
+
+```{r}
+## 2017 - 2018 ##
+##Demographic data##
+#import
+demo_1718 <- read_xpt(here("./Data/Raw_Data/DEMO_J_1718.xpt"))
+#save
+save(demo_1718, file = here("./Data/Raw_Data/DEMO_J_1718.rda"))
+
+##DEXA data##
+#import
+dxx_1718 <- read_xpt(here("./Data/Raw_Data/DXX_J_1718.xpt"))
+#save
+save(dxx_1718, file = here("./Data/Raw_Data/DXX_J_1718.rda"))
+
+##Food security data##
+fsq_1718 <- read_xpt(here("./Data/Raw_Data/FSQ_J_1718.xpt"))
+#save
+save(fsq_1718, file = here("./Data/Raw_Data/FSQ_J_1718.rda"))
+
+##Physical activity data##
+paq_1718 <- read_xpt(here("./Data/Raw_Data/PAQY_J_1718.xpt"))
+#save
+save(paq_1718, file = here("./Data/Raw_Data/PAQY_J_1718.rda"))
+```
+
+```{r}
+## 2015-2016 ##
+##Demographic data##
+
+```
